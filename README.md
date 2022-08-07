@@ -1,6 +1,6 @@
 # Typesense Railway Starter
 
-Deploy your own [Typesense](https://typesense.org) server to [Railway](https://railway.app) with the click of a button.
+Deploy your own [Typesense](https://typesense.org) server to [Railway](https://railway.app) with ease.
 
 ## Usage
 
@@ -8,28 +8,27 @@ Deploy your own [Typesense](https://typesense.org) server to [Railway](https://r
    Make sure to write it down somewhere, as you'll need it to access your server from the outside. If you need help
    coming
    up with something, [RandomKeygen](https://randomkeygen.com) is a good place to start.
-2. Click the "Deploy on Railway" button below and provided your Typesense API key when prompted.
+2. Click the "Deploy on Railway" button below and provide your Typesense API key when prompted.
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/pyVyl3?referralCode=cHlIwl)
 
 That's it. Your Typesense server will be accessible at the domain Railway assigns to your app on port 443.
 
 ## Additional Settings
 
 The instructions in the previous section are all you need to get Typesense up and running. However, there are a number
-of additional settings you can configure by expanding the "Pre-Configured Environment Variables" dropdown before
-finalizing your deployment.
-
-**Some of these environment variables have descriptions telling you not to change them. Don't change these variables
-from their default values or things will break.**
+of additional settings you can configure.
 
 ### Environment Variables
 
 #### `TYPESENSE_*`
-The variables that begin with `TYPESENSE_` correspond
-to Typesense's configuration options.
+
+If you expand the "Pre-Configured Environment Variables" dropdown, you'll see a number of environment variables whose
+names all begin with `TYPESENSE_`. These correspond to Typesense's configuration options.
 Consult [Typesense's documentation](https://typesense.org/docs/0.23.1/api/server-configuration.html#using-command-line-arguments)
 for information on how to use them. (You may notice that not all of Typesense's configuration options are exposed by
-these variables; the ones that are ommitted are ommitted intentionally. Please do not manually define environment
-variables for them unless you know what you're doing.)
+these variables. You are free to manually define the environment variables for the ommitted ones if you know what
+what you are doing.)
 
 #### `DOPPLER_TOKEN`
 
@@ -45,4 +44,4 @@ time.)
 
 ## License
 
-The contents of this repository are licesned under the [MIT license](LICENSE.md).
+The contents of this repository are licesned under the [MIT License](LICENSE.md).
