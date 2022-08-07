@@ -14,26 +14,10 @@ Deploy your own [Typesense](https://typesense.org) server to [Railway](https://r
 
 That's it. Your Typesense server will be accessible at the domain Railway assigns to your app on port 443.
 
-## Additional Settings
+## Doppler Support
 
-The instructions in the previous section are all you need to get Typesense up and running. However, there are a number
-of additional settings you can configure.
-
-### Environment Variables
-
-#### `TYPESENSE_*`
-
-If you expand the "Pre-Configured Environment Variables" dropdown, you'll see a number of environment variables whose
-names all begin with `TYPESENSE_`. These correspond to Typesense's configuration options.
-Consult [Typesense's documentation](https://typesense.org/docs/0.23.1/api/server-configuration.html#using-command-line-arguments)
-for information on how to use them. (You may notice that not all of Typesense's configuration options are exposed by
-these variables. You are free to manually define the environment variables for the ommitted ones if you know what
-what you are doing.)
-
-#### `DOPPLER_TOKEN`
-
-If you'd rather set your environment variables with [Doppler](https://doppler.com), you can use this environment
-variable to provide a [service token](https://docs.doppler.com/docs/service-tokens) for a relevant project
+If you'd rather set your environment variables with [Doppler](https://doppler.com), you can use the `DOPPLER_TOKEN`
+environment variable to provide a [service token](https://docs.doppler.com/docs/service-tokens) for a relevant project
 configuration. Keep in mind that when Railway environment variables conflict with Doppler environment variables,
 **Doppler's environment variables take precedence**. Also keep in mind that if your service token is ever invalidated,
 your deployments will fail until you provide Railway with a new one.
@@ -41,6 +25,13 @@ your deployments will fail until you provide Railway with a new one.
 (You can provide your Typesense API key via Doppler, too, but the starter will still require you to input a value for
 the `TYPESENSE_API_KEY` environment variable. You can just put whatever you want and Doppler will override it at build
 time.)
+
+## Additional Configuration
+
+If you know what you're doing, you can manually define environment variables
+for [Typesense's configuration options](https://typesense.org/docs/0.23.1/api/server-configuration.html#using-command-line-arguments).
+Most of these are purposefully not exposed by the starter template. If you're not sure whether you need to configure
+any of these, you don't.
 
 ## License
 
