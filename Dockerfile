@@ -4,7 +4,7 @@ ENV TYPESENSE_DATA_DIR="/data"
 
 COPY entrypoint.sh .
 
-RUN mkdir "/data"
+RUN mkdir -p $TYPESENSE_DATA_DIR
 RUN chmod +x entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
