@@ -7,7 +7,7 @@ Deploy your own [Typesense](https://typesense.org) server to [Railway](https://r
 1. Decide on what your Typesense API key will be. This can be whatever you want, but try to make it something secure.
    Make sure to write it down somewhere, as you'll need it to access your server from the outside. If you need help
    coming
-   up with something, [RandomKeygen](https://randomkeygen.com) is a good place to start.
+   up with something, [Hayasaka](https://celsiusnarhwal.dev/hayasaka) can help you out with that.
 2. Click the "Deploy on Railway" button below and provide your Typesense API key when prompted.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/pyVyl3?referralCode=cHlIwl)
